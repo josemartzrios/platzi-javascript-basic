@@ -80,6 +80,9 @@ function areaCirculo(radio){
 console.groupEnd();
 
 
+
+
+
 // FUNCIONES CUADRADO
 
 function calcularPerimetroCuadrado(){
@@ -114,6 +117,31 @@ function calcularAreaTriangulo(){
     const base = Number(document.getElementById("baseTriangulo").value);
 
     const area = areaTriangulo(base, altura);
+    alert(area);
+
+}
+
+
+// FUNCIONES CÍRCULO
+
+function calcularDiametroCirculo(){
+    const radio = Number(document.getElementById("radioCirculo").value);
+
+    const diametro = diametroCirculo(radio);
+    alert(diametro);
+}
+
+function calcularPerimetroCirculo(){
+    const radio = Number(document.getElementById("radioCirculo").value);
+    
+    const perimetro = perimetroCirculo(radio);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const radio = Number(document.getElementById("radioCirculo").value);
+
+    const area = areaCirculo(radio);
     alert(area);
 
 }
